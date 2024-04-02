@@ -1,0 +1,50 @@
+.sub-header {
+  background-color: #3a0ca3;
+  color: #fff;
+  font-weight: 300;
+  .conatiner {
+    margin: 0 auto !important;
+    width: 90%;
+    padding: 12px;
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      flex: 2 1 auto;
+      &__address {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span:nth-child(1) {
+          img {
+            width: 25px;
+          }
+        }
+      }
+      &__contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        .mobile {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          span:nth-child(1) {
+            img {
+              width: 25px;
+            }
+          }
+        }
+        .email {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          span:nth-child(1) {
+            img {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

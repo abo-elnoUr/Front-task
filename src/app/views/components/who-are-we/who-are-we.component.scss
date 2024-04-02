@@ -1,0 +1,119 @@
+.who-we-are {
+  .conatiner {
+    margin: 0 auto !important;
+    width: 85%;
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      gap: 30px;
+      &__content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 10px;
+        &__title {
+          text-transform: uppercase;
+          color: #2e82ff;
+          font-weight: 400;
+          letter-spacing: 1.5px;
+          font-size: 24px;
+        }
+        &__main-title {
+          font-size: 54px;
+          font-weight: 600;
+        }
+        &__desc {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          font-size: 18px;
+          font-weight: 400;
+          color: gray;
+          line-height: 30px;
+          letter-spacing: 1.2px;
+        }
+        &__cards {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+            width: 60%;
+            border-radius: 30px;
+            background: #fff;
+            margin-bottom: 20px;
+            .image {
+              width: 50px;
+              img {
+                width: 100%;
+              }
+            }
+            .content {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              span:nth-child(1) {
+                color: #2e82ff;
+                font-weight: 500;
+                font-size: 22px;
+                margin-bottom: 20px;
+              }
+              span:nth-child(2) {
+                color: gray;
+                font-weight: 400;
+                font-size: 19px;
+              }
+            }
+          }
+        }
+      }
+      &__galary {
+        display: flex;
+        flex: 1;
+        gap: 30px;
+        &__column_1 {
+          height: 100%;
+          margin-top: 40px;
+          img {
+            border-radius: 30px;
+            height: 650px;
+            width: 350px;
+            object-fit: cover;
+          }
+        }
+        &__column_2 {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: flex-start;
+          .image-1,
+          .image-2 {
+            img {
+              border-radius: 30px;
+            }
+          }
+          .image-1 {
+            img {
+              width: 350px;
+              height: 350px;
+              object-fit: cover;
+            }
+          }
+          .image-2 {
+            margin-top: 20px;
+            img {
+              width: 350px;
+              height: 200px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

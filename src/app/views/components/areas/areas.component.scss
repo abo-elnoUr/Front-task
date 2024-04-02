@@ -1,0 +1,139 @@
+.areas {
+  margin-top: 60px;
+
+  .conatiner {
+    position: relative;
+    .overlay-image {
+      position: absolute;
+      top: 10px;
+      right: 30%;
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+      background: linear-gradient(135deg, #ffffff 0%, #8ab7fa 100%);
+    }
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 85%;
+    .header {
+      &__title {
+        text-transform: uppercase;
+        color: #2e82ff;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      &__main-title {
+        font-size: 54px;
+        font-weight: 500;
+      }
+    }
+    .row-1 {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      .image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+          background-color: rgba(0, 0, 0, 0.35);
+          .content {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 40px;
+            bottom: 25px;
+            .number {
+              font-size: 60px;
+              font-weight: 600;
+              color: #fff;
+              opacity: 0.8;
+            }
+            .title {
+              font-size: 25px;
+              font-weight: 400;
+              color: #fff;
+            }
+          }
+        }
+        img {
+          border-radius: 30px;
+          width: 100%;
+          background: #000;
+          height: 350px;
+        }
+      }
+      .image-1,
+      .image-2,
+      .image-3 {
+        flex: 1;
+        height: 350px;
+      }
+    }
+    .row-2 {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      .image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+          background-color: rgba(0, 0, 0, 0.35);
+          .content {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 40px;
+            bottom: 25px;
+            .number {
+              font-size: 60px;
+              font-weight: 600;
+              color: #fff;
+              opacity: 0.8;
+            }
+            .title {
+              font-size: 25px;
+              font-weight: 400;
+              color: #fff;
+            }
+          }
+        }
+        img {
+          border-radius: 30px;
+          width: 100%;
+          background: #000;
+          z-index: -1;
+          height: 350px;
+          object-fit: cover;
+        }
+        &:nth-child(1) {
+          height: 350px;
+          object-fit: cover;
+        }
+        &:nth-child(2) {
+          height: 350px;
+          object-fit: cover;
+        }
+      }
+      .image-1 {
+        flex: 1;
+      }
+      .image-2 {
+        flex: 2;
+      }
+    }
+  }
+}

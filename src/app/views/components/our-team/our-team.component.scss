@@ -1,0 +1,78 @@
+.our-team {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .container {
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 10px;
+      right: 50px;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background: linear-gradient(315deg, #ffffff 0%, #7fb0fa 100%);
+    }
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 85%;
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &__title {
+        text-transform: uppercase;
+        color: #2e82ff;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        font-size: 24px;
+      }
+      &__main-title {
+        font-size: 54px;
+        font-weight: 500;
+      }
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      &__card {
+        padding-top: 30px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        .image {
+          width: 300px;
+          height: 400px;
+          img {
+            border-top-left-radius: 150px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title {
+            font-size: 26px;
+            font-weight: 500;
+            margin-top: 20px;
+          }
+          .job {
+            margin-top: 22px;
+            font-size: 18px;
+            color: #2e82ff;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

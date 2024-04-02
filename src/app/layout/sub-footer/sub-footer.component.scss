@@ -1,0 +1,25 @@
+.sub-footer {
+  background-color: #222;
+  color: #ebebeb;
+  font-weight: 300;
+  .conatiner {
+    margin: 0 auto !important;
+    width: 85%;
+    padding: 20px;
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      flex: 2 1 auto;
+      .title {
+        display: flex;
+        font-weight: 400;
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.testimonials {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 85%;
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      &__content {
+        flex: 1.5;
+        &__title {
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 24px;
+          letter-spacing: 1.5px;
+          padding-top: 50px;
+          color: #2e82ff;
+        }
+        &__main-title {
+          font-size: 48px;
+          font-weight: 500;
+          letter-spacing: 1.2px;
+          margin-bottom: 40px;
+          margin-top: 20px;
+          line-height: 50px;
+          color: #333;
+        }
+        .desc {
+          font-size: 20px;
+          color: #222;
+          line-height: 30px;
+        }
+        .buttons {
+          display: flex;
+          gap: 40px;
+          margin-top: 40px;
+          span {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #2e82ff;
+            border-radius: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 60%;
+              text-align: center;
+            }
+          }
+        }
+      }
+      &__card {
+        padding: 40px;
+        border-radius: 40px;
+        background-color: #fff;
+        height: 100%;
+        flex: 1;
+        position: relative;
+        .overlay-image {
+          position: absolute;
+          top: -30px;
+          left: -30px;
+          width: 80px;
+          height: 80px;
+          z-index: -1;
+          border-radius: 80px;
+          background: radial-gradient(circle at top, #77acfd, #ffffff);
+        }
+        .quote {
+          img {
+            width: 80px;
+          }
+        }
+        .desc {
+          font-weight: 400;
+          font-size: 26px;
+          align-items: center;
+          line-height: 35px;
+          display: flex;
+          justify-content: center;
+        }
+        .divider {
+          width: 80%;
+          height: 2px;
+          color: gray;
+          margin: 10px auto;
+        }
+        .rate-section {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .user-image {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            span {
+              img {
+                width: 60px;
+                height: 60px;
+                border-radius: 60px;
+                margin: 10px 0;
+              }
+            }
+            span:nth-child(2) {
+              font-size: 26px;
+              font-weight: 500;
+              margin: 10px 0;
+              color: #333;
+            }
+          }
+
+          .rate {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            span {
+              img {
+                width: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

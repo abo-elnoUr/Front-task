@@ -1,0 +1,94 @@
+.header {
+  background-color: #fff;
+  .conatiner {
+    margin: 0 auto !important;
+    width: 90%;
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      &__navs {
+        ul {
+          display: flex;
+          justify-content: flex-start;
+          list-style: none;
+          align-items: center;
+          gap: 20px;
+          li {
+            font-size: 18px;
+            font-weight: 500;
+          }
+          li.active {
+            background-color: #7ad3fc;
+            padding: 8px 15px;
+            border-radius: 30px;
+          }
+        }
+      }
+      &__logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .img {
+          width: 50px;
+          height: 50px;
+          border-radius: 60px;
+          background-color: #3a0ca3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 40px;
+          }
+        }
+
+        .title {
+          font-weight: 500;
+          font-size: 24px;
+        }
+      }
+      &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .login {
+          &__content {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            span:nth-child(1) {
+              img {
+                width: 25px;
+              }
+            }
+            span:nth-child(2) {
+              font-size: 18px;
+              font-weight: 400;
+            }
+          }
+        }
+        .add-listing {
+          &__content {
+            background-color: #3a0ca3;
+            padding: 15px 25px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            span:nth-child(1) {
+              img {
+                width: 25px;
+              }
+            }
+            span:nth-child(2) {
+              font-size: 18px;
+              font-weight: 400;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

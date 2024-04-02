@@ -1,0 +1,84 @@
+<section class="landing">
+    <section class="conatiner">
+        <div class="flex">
+            <div class="flex__content">
+                <h3 class="flex__content__title">Real Estate</h3>
+                <h2 class="flex__content__main-title">Find a perfect home you love..!</h2>
+                <p class="flex__content__desc">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.
+                    Integer a dolor eu sapien sodales vulputate ac in purus.</p>
+                <div class="flex__content__slider">
+                    <div class="before" (click)="prev()">
+                        <img src="assets/images/icons/prev.png" alt="prev">
+                    </div>
+                    <div class="images">
+                        <div class="image" *ngFor="let image of images; let i = index"
+                            [ngClass]="{ 'active': currentIndex === i }">
+                            <img [src]="'assets/images/slider/slider'+(currentIndex+1)+'.jpg'" [alt]="image.name">
+                        </div>
+                    </div>
+                    <div class="after" (click)="next()">
+                        <img src="assets/images/icons/next.png" alt="next">
+                    </div>
+                </div>
+            </div>
+            <div class="flex__form">
+                <div class="flex__form__card">
+                    <div class="tabs">
+                        <span>For Sale</span>
+                        <span>For Rent</span>
+                    </div>
+                    <form class="forms">
+                        <div class="forms__item">
+                            <input type="text" placeholder="New York, San Francisco, etc">
+                        </div>
+                        <div class="forms__item">
+                            <select placeholder="Select Property Type">
+                                <option value="1">Select Property Type</option>
+                            </select>
+                        </div>
+                        <div class="forms__item">
+                            <select placeholder="Select Rooms">
+                                <option value="1">Select Rooms</option>
+                            </select>
+                        </div>
+                        <div class="forms__item advanced">
+                            <span><img src="assets/images/icons/filter.png" alt="filter" width="20"></span>
+                            <span>Advance Search</span>
+                        </div>
+                        <button class="search">
+                            <span><img src="assets/images/icons/search.svg" width="25" alt="search"></span>
+                            <span>Search</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="happy-new">
+            <div class="happy-new__happy">
+                <div class="images">
+                    <div class="image"><img src="assets/images/users/1.png" alt=""></div>
+                    <div class="image"><img src="assets/images/users/2.png" alt=""></div>
+                    <div class="image"><img src="assets/images/users/3.png" alt=""></div>
+                    <div class="image"><img src="assets/images/users/4.png" alt=""></div>
+                    <div class="image"><img src="assets/images/users/5.png" alt=""></div>
+                    <div class="image"><img src="assets/images/users/6.png" alt=""></div>
+                </div>
+                <div class="content">72K+ Happy <br /> Customers</div>
+            </div>
+            <div class="happy-new__new">
+                <div class="image"><img src="assets/images/villa.png" alt=""></div>
+                <div class="content">200+ New <br /> Listings Everyday!</div>
+            </div>
+        </div>
+        <div class="trusted">
+            <div class="overlay-image"></div>
+            <p class="trusted__desc">Trusted by 100+ Companies across the globe!</p>
+            <div class="trusted__image">
+                <img src="assets/images/trust.png">
+            </div>
+        </div>
+    </section>
+    <div class="circular-background">
+
+    </div>
+</section>
